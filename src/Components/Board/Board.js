@@ -82,7 +82,7 @@ const Board = () => {
         <>
             <main className={`main--container ${(winner && getStatus() === 
                 "Congrats player " + winner + " for winning!" 
-                || !winner && getStatus() === "The game ended in a draw!") ? 
+                && !winner && getStatus() === "The game ended in a draw!") ? 
                 (getStatus() === "The game ended in a draw!" ? "draw" : "winner") : (playerXIsNext ? "X" : "O")}`}>
 
                 <div className="logo">
